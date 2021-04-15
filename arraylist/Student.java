@@ -2,13 +2,31 @@ package arraylist;
 import java.util.ArrayList;
 
 public class Student {
-	public String name;
-	private static int serialNum = 1000;
-	private int studentID;
+	int studentID;
+	String studentName;
+	ArrayList<Subject> subjectList;
 	
-	Student(String pname){
-		this.name = pname;
+	public Student(int studentID, String studentName) {
+		this.studentID = studentID;
+		this.studentName = studentName;
+		subjectList = new ArrayList<Subject>();
 	}
 	
-	public void setScore(int )
+	public void addSubject(String name, int score) {
+		Subject subject = new Subject();        // create new instance 
+		subject.setName(name);
+		subject.setScorePoint(score);
+		subjectList.add(subject);                // .add(meth of ArrayList) to member variable
+	}
+	
+	public void showStudentInfo() {
+		int total = 0;
+		for(Subject subj : subjectList) {
+			total += subj.getScorePoint();
+			System.out.println(studentName + "'s " + subj.getName() + " score is " + 
+			subj.getScorePoint() + ".");
+		}
+		System.out.println("Total score is " + total + ".");
+	}
+		
 }

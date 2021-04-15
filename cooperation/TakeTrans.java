@@ -15,6 +15,7 @@ public class TakeTrans {
 		studentLily.takeSubway(subway2);
 		studentLily.showInfo();
 		subway2.showInfo();
+		 
 	}
 
 }

@@ -1,24 +1,25 @@
-package inheritance;
+package polymorphism;
 
 public class Customer {
 	protected int customerID;
 	protected String customerName;
 	protected String customerGrade;
-	public int bonusPoint;
+	int bonusPoint;
 	double bonusRatio;
 	
 	public Customer() {
-		customerGrade = "SILVER";
-		bonusRatio = 0.01;
-		System.out.println("Customer enlisted.");
+		initCustomer();
 	}
 	
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
+		initCustomer();
+	}
+	
+	private void initCustomer() {                // reseting member variable
 		customerGrade = "SILVER";
-		bonusRatio = 0.01;
-		System.out.println("Customer enlisted.");
+		bonusRatio = .01;
 	}
 	
 	public int calcPrice(int price) {
@@ -52,6 +53,7 @@ public class Customer {
 	
 	public String showCustomerInfo() {
 		return "Your name is " + customerName + " and your grade is " + 
-				customerGrade + ". Your bonus point is " +  bonusPoint + ".";
+				customerGrade + ". Your bonus point is " +  bonusPoint + ". ";
 	}
+	
 }

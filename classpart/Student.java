@@ -18,11 +18,16 @@ public class Student {
 		System.out.println(studentName + "," + address);
 	}
 	
-public static void main(String[ ] args) {
-	Student studentAhn = new Student();
-	studentAhn.studentName = "Sunny";
+	public String toString() {
+		return studentName + "," + studentID;
+	}
 	
-	System.out.println(studentAhn.studentName);
-	System.out.println(studentAhn.getStudentName());
-}
+	public static void main(String[ ] args) {
+		Student studentAhn = new Student();
+		studentAhn.studentName = "Sunny";
+	
+		System.out.println(studentAhn.studentName);
+		System.out.println(studentAhn.getStudentName());
+		System.out.println(studentAhn.toString());
+	}
 }
