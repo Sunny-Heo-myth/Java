@@ -13,6 +13,7 @@ public class OverridingTest3 {
 		
 		Customer customerHeo = new VIPCustomer(10030, "Heo", 2000);
 		System.out.println(customerHeo.getCustomerName() + customerHeo.calcPrice(price));
+		
 	}
 
 }

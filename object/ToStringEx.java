@@ -25,6 +25,11 @@ class Book {
 		}
 		return false;
 	}
+	
+	@Override
+	public int hashCode() {
+		return bookNumber;
+	}
 }
 
 public class ToStringEx {

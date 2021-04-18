@@ -3,8 +3,10 @@ package object;
 public class MydateTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		MyDate date1 = new MyDate(9, 18, 2004);
+		MyDate date2 = new MyDate(9, 18, 2005);
+		
+		System.out.println(date1.equals(date2));
 	}
 
 }

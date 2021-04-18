@@ -1,6 +1,6 @@
 package object;
 
-
+import staticex.Student;
 
 public class EqualsTest {
 
@@ -29,7 +29,6 @@ public class EqualsTest {
 			System.out.println("book1 and book2 have same data.");
 		else
 			System.out.println("book1 and book2 have different data.");
-		
-		
 	}
+
 }
