@@ -5,6 +5,7 @@ import collection.Member;
 public class MemberArrayListTest {
 
 	public static void main(String[] args) {
+		
 		MemberArrayList memberArrayList = new MemberArrayList();
 		
 		Member memberLee = new Member("Lee");
@@ -24,6 +25,6 @@ public class MemberArrayListTest {
 		memberArrayList.insertMember(memberLee, 4);
 		
 		memberArrayList.showAllMember();
+		
 	}
-
 }

@@ -2,6 +2,7 @@ package array;
 
 public class SoloCoding {
 	public static void main(String[] args) {
+		
 		char[][] dimensions = new char[13][2];
 		char character = 'A';
 		

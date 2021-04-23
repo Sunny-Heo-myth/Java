@@ -9,5 +9,4 @@ public class ComputerTest {
 		Computer c4 = new MyNotebook();
 
 	}
-
 }

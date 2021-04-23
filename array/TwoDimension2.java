@@ -2,6 +2,7 @@ package array;
 
 public class TwoDimension2 {
 	public static void main(String[] args) {
+		
 		int[][] intarray = new int[2][3];
 		
 		for(int i = 0; i < intarray.length; i++) {
@@ -12,5 +13,6 @@ public class TwoDimension2 {
 		}
 		System.out.println(intarray.length);
 		System.out.println(intarray[0].length);
+		
 	}
 }

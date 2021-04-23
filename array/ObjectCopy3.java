@@ -1,15 +1,13 @@
 package array;
 
 public class ObjectCopy3 {
-
 	public static void main(String[] args) {
+		
 		Book[] bookArray1 = new Book[3];
 		Book[] bookArray2 = new Book[3];
-		
 		bookArray1[0] = new Book("태백산맥", "조정래");
 		bookArray1[1] = new Book("지옥", "단테");
 		bookArray1[2] = new Book("물리학 강의", "리처드 파인만");
-		
 		bookArray2[0] = new Book();
 		bookArray2[1] = new Book();
 		bookArray2[2] = new Book();
@@ -27,14 +25,16 @@ public class ObjectCopy3 {
 		bookArray1[0].setAuthor("박완서");
 		
 		System.out.println("=== bookArray1 ===");
+		
 		for(int i = 0; i < bookArray1.length; i++) {
 			bookArray1[i].showBookInfo();
 		}
 		
 		System.out.println("=== bookArray2 ===");
+		
 		for(int i = 0; i < bookArray2.length; i++) {
 			bookArray2[i].showBookInfo();
 		}
+		
 	}
-
 }

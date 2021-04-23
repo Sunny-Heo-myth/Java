@@ -3,6 +3,7 @@ package collection.arraylist;
 import java.util.ArrayList;
 
 class MyQueue{
+	
 	private ArrayList<String> arrayQueue = new ArrayList<String>();
 	
 	public void enQueue(String data) {
@@ -21,7 +22,6 @@ class MyQueue{
 }
 
 public class QueueTest {
-
 	public static void main(String[] args) {
 
 		MyQueue queue = new MyQueue();
@@ -34,5 +34,4 @@ public class QueueTest {
 		System.out.println(queue.deQueue());
 
 	}
-
 }

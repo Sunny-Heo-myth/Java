@@ -16,15 +16,17 @@ class MyStack{
 			System.out.println("Stack empty.");
 			return null;
 		}
-		
 		return(arrayStack.remove(len-1));
 	}
 	
 }
-public class StackTest {
 
+
+public class StackTest {
 	public static void main(String[] args) {
+		
 		MyStack stack = new MyStack();
+		
 		stack.push("A");
 		stack.push("B");
 		stack.push("C");
@@ -34,5 +36,4 @@ public class StackTest {
 		System.out.println(stack.pop());
 
 	}
-
 }

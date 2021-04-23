@@ -1,9 +1,10 @@
 package array;
+
 import java.util.ArrayList;
 
 public class ArrayListTest {
-
 	public static void main(String[] args) {
+		
 		ArrayList<Book> library = new ArrayList<Book>();
 		
 		library.add(new Book("태백산맥", "조정래"));
@@ -17,14 +18,13 @@ public class ArrayListTest {
 			element.showBookInfo();
 			// Generic dtype automatically designated library arraylist as Book class array.
 		}
+		
 		System.out.println();
-		
 		System.out.println("===Using EnhancedForLoop===");
-		
 		
 		for (Book element : library) {
 			element.showBookInfo();
 		}
+		
 	}
-
 }
