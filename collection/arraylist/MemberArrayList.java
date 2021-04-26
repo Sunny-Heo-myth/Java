@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import collection.Member;
 
 public class MemberArrayList {
+	
 	private ArrayList<Member> arrayList;
 	
 	public MemberArrayList() {

@@ -1,7 +1,9 @@
 package arraylist;
+
 import java.util.ArrayList;
 
 public class Student {
+	
 	int studentID;
 	String studentName;
 	ArrayList<Subject> subjectList;
