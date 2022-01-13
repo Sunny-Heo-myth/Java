@@ -6,7 +6,7 @@ public class Member {
     public static int FEMALE = 1;
 
     private String name;
-    private int sex;
+    public int sex;
     private int age;
 
     public Member(String name, int sex, int age) {
